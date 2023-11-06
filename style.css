@@ -1,0 +1,66 @@
+*{
+    font-family: verdana;
+    font-size: 13px;
+    color: black;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 250px 250px 250px 250px 250px;
+    gap: 30px;
+    background-color: burlywood;
+}
+
+.first-card {
+    grid-column: span 2;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.first-card h1{
+    font-size: 40px;
+    font-family: sans-serif;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+.first-card {
+    background-color: red;
+}
+
+.total{
+    grid-column: span 2;
+    background-color: red;
+}
+
+.footer {
+    grid-column: span 2;
+    background-color: red;
+}
+
+/* Media query for screens with a maximum width of 600px */
+@media screen and (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr; /* Change to a single column layout */
+        gap: 45px; /* Decrease the gap for smaller screens */
+        font-size: 10px;
+        grid-template-rows: 80px 300px 300px 300px 300px 300px; 
+    }
+
+    .first-card {
+        grid-column: span 2; /* Reset to the default behavior */
+    }
+
+    img {
+        float: left; /* Remove image float on smaller screens */
+    }
+
+    .first-card h1 {
+        font-size: 30px; /* Adjust the font size for the heading */
+    }
+}
