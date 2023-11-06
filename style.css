@@ -38,6 +38,11 @@ img{
     background-color: red;
 }
 
+.footer {
+    grid-column: span 2;
+    background-color: red;
+}
+
 /* Media query for screens with a maximum width of 600px */
 @media screen and (max-width: 600px) {
     .grid-container {
